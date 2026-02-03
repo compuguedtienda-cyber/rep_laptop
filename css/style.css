@@ -118,7 +118,7 @@ body{
 }
 
 .action{
-    background:blue;
+    background:rgb(0, 0, 0);
     color:#fff;
     text-decoration:none;
     border-radius:15px;
@@ -305,7 +305,9 @@ body{
       box-shadow:0 8px 20px rgba(0,0,0,.2);
     }
 
-
+  .icon-btn i{
+      font-size: 1.1rem;
+    }
 
 
     /* WEATHER TEXT */
