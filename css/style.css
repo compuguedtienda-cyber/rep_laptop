@@ -104,7 +104,7 @@ body{
 .actions{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:14px;
+    gap:20px;
     padding:15px 20px 30px;
 }
 
@@ -112,8 +112,8 @@ body{
     background:blue;
     color:#fff;
     text-decoration:none;
-    border-radius:18px;
-    padding:16px 10px;
+    border-radius:15px;
+    padding:10px 20px;
     text-align:center;
     font-size:15px;
     font-weight:600;
@@ -273,7 +273,7 @@ body{
     .city{
       margin-top:4px;
       font-size:12px;
-      color:var(--muted);
+      color:var(--text);
       padding-left:6px;
     }
 
@@ -284,10 +284,10 @@ body{
 
     .icon-btn{
       background:var(--card);
-      border:none;
+      border-radius: 1rem;
       color:var(--text);
-      width:42px;
-      height:42px;
+      width:45px;
+      height:45px;
       border-radius:12px;
       cursor:pointer;
       display:flex;
@@ -302,7 +302,7 @@ body{
     /* WEATHER TEXT */
 .weather-text{
   font-size:12px;
-  color:var(--muted);
+  color:var(--text);
   padding-left:6px;
   margin-top:2px;
 }
@@ -333,7 +333,7 @@ body{
 
     footer{
       text-align:center;
-      font-size:12px;
-      color:var(--muted);
+      font-size:15px;
+      color:var(--text);
       line-height:1.6;
     }
