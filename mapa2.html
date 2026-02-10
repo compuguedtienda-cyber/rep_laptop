@@ -71,15 +71,25 @@
 </body>
 
 <style>
-    body{
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      min-height:100vh;
-      background:linear-gradient(160deg,#1a1f3c,#0b0f24);
-      color:#fff;
-      margin:0;
-    }
+
+  .header{
+  margin-bottom:10px;
+
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start; /* 👈 CLAVE: ya no centra vertical */
+  height:100vh;           /* pantalla fija */
+  overflow:hidden;        /* sin scroll */
+  background:linear-gradient(160deg,#1a1f3c,#0b0f24);
+  color:#fff;
+  margin:0;
+  padding-top:20px;       /* 👈 pequeño margen superior */
+}
+
+    
 
     .map-container{
       width:100%;
@@ -128,6 +138,10 @@
     font-size: 22px;
 }
 
+.phone{
+  width:100%;
+  max-width:420px;
+}
 
 
   </style>
