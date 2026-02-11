@@ -49,6 +49,17 @@ body{
     color:#ffffff;
 }
 
+
+
+/* SUBIR CONTENIDO DESDE LOGO HACIA ABAJO */
+.header,
+.container,
+.actions{
+  transform: translateY(-80px); /* ajusta el valor si quieres más arriba */
+}
+
+
+
 .avatar{ /*Control Logo*/
     width:90px;
     height:90px;
@@ -210,6 +221,7 @@ body{
   overflow: hidden;
   background: #fff;
   border-radius: 10px;
+  margin-top: 5rem;
 }
 
 .slider-track {
