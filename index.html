@@ -1,84 +1,118 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COMPUGUED | Tecnología</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<link rel="stylesheet" href="css/style.css">
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
+<!--ESTILO CELULAR -->  
 <div class="phone">
 
-<!-- TOP BAR -->
-<div class="top-bar">
-
-  <div class="weather-wrap">
-    <div class="weather">
-      <i class="fas fa-temperature-low thermo"></i>
-      <span class="temp">-- °C</span>
-    </div>
-    <div class="city">Chiclayo</div>
+<!--WIDGET CLIMA -->  
+  <div class="top-bar">
+    <div class="weather-wrap">
+      <div class="weather" id="weather">
+        <i class="fas fa-spinner fa-spin"></i>
+        <div class="info">
+          <span class="temp">--°C</span>
+        </div>
+      </div>
+      <div class="city">Chiclayo</div>
     <div class="weather-text" id="weatherText">---</div>
-  </div>
 
-  <div class="share-buttons">
-    <button class="icon-btn" id="shareBtn">
-      <i class="fa-solid fa-share-nodes"></i>
-    </button>
+    </div>
 
-    <button class="icon-btn" onclick="goToMap()">
-      <i class="fa-solid fa-car"></i>
-    </button>
-  </div>
+    <!--COMPARTIR BOTON -->  
+<div class="share-buttons">
+  <button class="icon-btn" onclick="sharePage()">
+    <i class="fa-sharp fa-solid fa-share-nodes"></i>
+  </button>
 
+  <button class="icon-btn carro" onclick="goToMap()">
+    <i class="fa-solid fa-car"></i>
+  </button>
 </div>
+    
 
-<!-- HEADER -->
+  </div>
+<!--FIN WIDGET CLIMA -->  
+
+<!-- LOGO -->
 <div class="header">
-  <img src="img/logo/logofondoazul.png" class="avatar" alt="Logo COMPUGUED">
-  <h1>COMPUGUED</h1>
-  <p>Venta de Computadoras, Laptops e Impresoras</p>
-</div>
+    <img src="img/logo/logofondoazul.png" class="avatar">
+    <h1 class="titulo-principal">COMPUGUED</h1>
+    <p>Asesoría y Venta de Computadoras, Laptops, Impresoras y Accesorios Tecnológicos</p>
 
-<!-- SLIDER -->
+<!-- REDES SOCIALES -->
+    <div class="social">
+        <i class="fa-brands fa-instagram"></i>        
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+    </div>
+</div>
+<!-- FIN LOGO -->
+<!-- FIN REDES SOCIALES -->
+
 <div class="container">
+  <!-- SLIDER -->
   <div class="slider">
     <button class="nav prev">&#10094;</button>
 
     <div class="slider-window">
       <div class="slider-track">
-        <img src="img/slider/1.jpg" loading="lazy" alt="">
-        <img src="img/slider/2.jpg" loading="lazy" alt="">
-        <img src="img/slider/3.jpg" loading="lazy" alt="">
+        <img src="img/slider/1.jpg">
+        <img src="img/slider/2.jpg">
+        <img src="img/slider/3.jpg">
+        <img src="img/slider/4.jpg">
+        <img src="img/slider/5.jpg">
+        
       </div>
     </div>
 
     <button class="nav next">&#10095;</button>
   </div>
+
 </div>
 
-<!-- ACTIONS -->
+<!-- DOBLE BOTON PDF + WTZ -->
 <div class="actions">
-  <a href="catalogo.pdf" class="action btn">
+    <a href="catalogo.pdf" class="action btn">
     <i class="fa-solid fa-download"></i>
     <span>Catálogo PDF</span>
-  </a>
+    </a>
 
-  <a href="https://wa.me/51982846127" class="action">
-    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://wa.me/51982846127" class="action">
+   <i class="fa-brands fa-whatsapp"></i>
     <span>926 845 127</span>
-  </a>
+    </a>
 </div>
-
+<!-- DOBLE BOTON PDF + WTZ -->
+<!-- <footer>
+    📌 7 de enero 1299,  esquina Pedro Ruiz <br>
+  </footer> -->
 </div>
+<!--FIN ESTILO CELULAR -->
 
+ 
+
+
+<!-- ENLACE JS -->
 <script src="js/app.js"></script>
+<!-- FIN ENLACE JS -->
+
 </body>
 </html>
